@@ -24,7 +24,7 @@ let person2 = "basanti"; // changeable
 console.log ({person, person1, person2})*/
 
 // Interactions
-//alert ("js class is in session");
+alert ("js class is in session");
  person2 = prompt("what is your name?");
  const isLegal = confirm("are you 18 years and above?");
  console.log ({person, person1, isLegal});
