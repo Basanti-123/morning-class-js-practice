@@ -13,12 +13,12 @@ comment*/
 // ES6 - const, let
 //keyword var, let, const
 
-//var person = "john"; 
-person = "Ram";   // resign
+// var person = "john"; 
+// person = "Ram";   // resign
 
-const person1 = "jonny";  // fixed value
+// const person1 = "jonny";  // fixed value
 
-let person2 = "basanti"; // changeable
+// let person2 = "basanti"; // changeable
  //person2 = "basa";
 
 //console.log ({person, person1, person2})*/
@@ -35,7 +35,7 @@ let person2 = "basanti"; // changeable
 //== (type the data type)
 //=== (strict the check inside the value uppercase and lower case string, number)
 
-alert("js class is in session")
+/*alert("js class is in session")
 const age = Number(prompt("What is your age"));
 const isLegal = confirm("are you 18 years and above?");
 
@@ -48,4 +48,33 @@ if (isLegal) {
     alert("sorry acess denied")
 }
 
-console.log ({person1, person2, isLegal});
+console.log ({person1, person2, isLegal});*/
+
+// Statement
+if (a ===0) {
+} else if (a === 1){
+}else if (a===2) {
+
+}else {
+    alert("Invalid day");
+}
+ // switch case
+
+ switch (a===0){
+    case value:
+        case value:
+            default:
+ }
+
+
+// Ternary Operator
+
+if ( a===0) {
+    console.log("its 0");
+} else {
+    console.log("its not 0");
+}
+
+// Ternary Operator
+const answer = a === 0? console.log("its 0"): console.log("its not 0");
+
