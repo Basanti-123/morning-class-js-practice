@@ -126,7 +126,7 @@ switch (day) {
 }*/
 
 // task 2
-const Number1 = Number(prompt("Enter a first number"));
+/*const Number1 = Number(prompt("Enter a first number"));
 const Number2 = Number(prompt("Enter a second number"));
 let operator = prompt("Enter a operator ");
 let result;
@@ -150,4 +150,12 @@ switch (operator) {
 }
 if (result !== undefined) {
   console.log(`Result: ${result}`); // "Result:"+ result
+}*/
+
+// Loops
+// for Loop
+
+let i;
+for (i = 0; i < 10; i++) {
+  console.log("the value of i is ", i);
 }
