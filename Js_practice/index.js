@@ -155,7 +155,23 @@ if (result !== undefined) {
 // Loops
 // for Loop
 
-let i;
-for (i = 0; i < 10; i++) {
-  console.log("the value of i is ", i);
-}
+// let i;
+// for (i = 0; i < 10; i++) {
+//   console.log("the value of i is ", i);
+// }
+
+//while loop
+// let i = 0;
+
+// while (i < 15) {
+// console.log( " the value of i is ", i);
+//   i++;
+// }
+
+// Do while loop
+let i = 0; // syntax
+
+do {
+  console.log("the value of i", i); // code executed
+  i++;
+} while (i < 20); // condition
