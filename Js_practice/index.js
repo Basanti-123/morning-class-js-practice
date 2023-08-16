@@ -153,7 +153,7 @@ if (result !== undefined) {
 }*/
 
 // Loops
-// for Loop
+// for Loop  importent for JavaScript
 
 // let i;
 // for (i = 0; i < 10; i++) {
@@ -169,9 +169,18 @@ if (result !== undefined) {
 // }
 
 // Do while loop
-let i = 0; // syntax
+// let i = 0; // syntax
 
-do {
-  console.log("the value of i", i); // code executed
-  i++;
-} while (i < 20); // condition
+// do {
+//   console.log("the value of i", i); // code executed
+//   i++;
+// i+= 2;
+// } while (i < 20); // condition
+
+// let j = 1;
+
+// do {
+//   console.log("the value of j", j);
+//   //j++;
+//   j = j+1
+// } while (j < 12);
