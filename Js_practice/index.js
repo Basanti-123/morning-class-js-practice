@@ -220,19 +220,37 @@ sayHi({ salutation: "Miss", fName: "Basanti", lastName: "Nagari" });
 // if password !== password access denied
 // if username and password matchs acess granted
 
-const login = (username, password) => {
-  username = username ? username.toLowerCase() : "";
-  if (!username || username === "") return "Username is required";
-  if (!password || password === "") return "Password is required";
-  if (username !== "basanti") return "Username not found ";
-  if (password !== "password") return "Username or password is worng ";
-  if (username === "basanti" && password === "password")
-    return "Access Granted";
-  return "Something went worng";
+// const login = (username, password) => {
+//   username = username ? username.toLowerCase() : "";
+//   if (!username || username === "") return "Username is required";
+//   if (!password || password === "") return "Password is required";
+//   if (username !== "basanti") return "Username not found ";
+//   if (password !== "password") return "Username or password is worng ";
+//   if (username === "basanti" && password === "password")
+//     return "Access Granted";
+//   return "Something went worng";
+// };
+// const username = prompt("Username");
+// const password = prompt("Password");
+// const result = login(username, password);
+// console.log({ result });
+
+// object
+const person = {
+  firstName: "basanti",
+  lastName: "Nagari",
+  age: 24,
+  dob: "1998",
+  createdDate: new Date(),
+  fullName: function () {
+    // method
+    return this.firstName + " " + this.lastName;
+  },
 };
-const username = prompt("Username");
-const password = prompt("Password");
-const result = login(username, password);
-console.log({ result });
+
+//const name = person.firstName;  //
+//const name = person["firstName"];
+const fullname = person.fullName();
+console.log(fullname);
 
 // hosting (variable/function)
