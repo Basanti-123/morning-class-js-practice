@@ -184,3 +184,36 @@ if (result !== undefined) {
 //   //j++;
 //   j = j+1
 // } while (j < 12);
+
+// function
+
+let a = 3;
+let b = 4;
+let c = 5;
+function add() {}
+
+// pure function (resolve and  result always remains the same ; eg: utils function)
+// implicit function(no return or passing from one function to another)
+//explicit function  (return)
+// callback function  (function vitra function pass)
+
+// task 1 function
+
+// write the explicit function that checks the username and password; and sends the following message
+// if no username, username is requird
+// if no password, password is required
+// if username !== username, username not found
+// if password !== password access denied
+// if username and password matchs acess granted
+
+function checkUsernameAndPassword(username, password) {
+  const username = "username";
+  const password = "password";
+
+  if (!username) {
+    return "Username is required";
+  }
+}
+if (!password) {
+  return "Password is required";
+}
