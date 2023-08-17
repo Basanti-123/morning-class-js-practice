@@ -186,17 +186,31 @@ if (result !== undefined) {
 // } while (j < 12);
 
 // function
+// const checkUsernameAndPassword = (username, password) => {
+//   if (username === "username" && password === "password") {
+//     alert("access granted");
+//   } else alert("Access Denied");
+// };
 
-let a = 3;
-let b = 4;
-let c = 5;
-function add() {}
+// const checkUsernameAndPassword1 = (username, password) => {
+//   if (username === "username" && password === "password") {
+//     alert("access granted");
+//   } else alert("Access Denied");
+// };
 
+// const result = checkUsernameAndPassword("username", "password");
+// alert(result);
+
+//4 types of function
 // pure function (resolve and  result always remains the same ; eg: utils function)
 // implicit function(no return or passing from one function to another)
 //explicit function  (return)
 // callback function  (function vitra function pass)
 
+function sayHi({ salutation, fName, lastName }) {
+  console.log("hi", salutation + " " + fName + " " + lastName);
+}
+sayHi({ salutation: "Miss", fName: "Basanti", lastName: "Nagari" });
 // task 1 function
 
 // write the explicit function that checks the username and password; and sends the following message
@@ -206,14 +220,19 @@ function add() {}
 // if password !== password access denied
 // if username and password matchs acess granted
 
-function checkUsernameAndPassword(username, password) {
-  const username = "username";
-  const password = "password";
+const login = (username, password) => {
+  username = username ? username.toLowerCase() : "";
+  if (!username || username === "") return "Username is required";
+  if (!password || password === "") return "Password is required";
+  if (username !== "basanti") return "Username not found ";
+  if (password !== "password") return "Username or password is worng ";
+  if (username === "basanti" && password === "password")
+    return "Access Granted";
+  return "Something went worng";
+};
+const username = prompt("Username");
+const password = prompt("Password");
+const result = login(username, password);
+console.log({ result });
 
-  if (!username) {
-    return "Username is required";
-  }
-}
-if (!password) {
-  return "Password is required";
-}
+// hosting (variable/function)
