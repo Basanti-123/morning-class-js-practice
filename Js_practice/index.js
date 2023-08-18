@@ -284,9 +284,49 @@ console.log({ age });
 
 // hosting (variable/function)
 
+// Object
+
+/*const person = {
+  firstName: "basanti",
+  age: 16,
+  isMale: true,
+  address: ["Darchula", "kathmandu"],
+  getDob: () => {
+    return 2023 - person.age;
+  },
+};
+
+
+const fName = person.firstName;
+const dob = person.getDob();
+console.log(fName);
+console.log(dob);*/
+
 // Array
 
-const student_name = ["basanti", "rita", "madhabi", "rita", "sabi"];
+// Array similar collection of data or data type hold
+
+// const cars = [
+//   "volvo",
+//   "ferarri",
+
+//   {
+//     modelYear: 2010,
+//     brandName: "Tesla",
+//   },
+// ];
+// console.log(cars);
+
+//const cars = ["Saab", "Volvo", "BMW", 46];
+//console.log(cars.length);
+
+//cars.push("vivo"); // add a value in last index
+//cars.pop(""); // remove the value in last index
+
+//cars.toString();
+
+//console.log(cars);
+/*const student_name = ["basanti", "rita", "madhabi", "rita", "sabi"];
 
 console.log(student_name.length);
 student_name.push("rabi");
@@ -296,15 +336,44 @@ student_name.pop("sabi");
 console.log(student_name);
 
 student_name.toString();
-console.log(student_name);
+console.log(student_name);*/
+
+// Array methods
+// Map, filter, reduce, split, find
+
+const cars = [
+  "volvo",
+  "ferarri",
+
+  {
+    modelYear: 2010,
+    brandName: "Tesla",
+  },
+];
+
+//cars.forEach((car) => console.log(car));
+//cars.map((car) => console.log(car));
+//cars.map((car) => console.log(car ? car.brandName : car));
+
+//cars.map((car) => console.log(car && car.brandName ? car.brandName : car)); // ternary Operators
 
 // Destructuring Objects
-const user = { name: "", email: "", password: "123", phone: "" };
+
+//const user = { name: "", email: "", password: "123", phone: "" };
 
 // const { email, password, ...rest } = user;
 // console.log({ user: rest });
 
 // console.log(user.password);
 
-const [first, ...rest] = [1, 2, 3, 4];
-console.log(rest);
+// Array destructuring
+// ES6 Spread operator
+
+/*const [first, ...rest] = [1, 2, 3, 4];
+console.log(rest);*/
+
+// const { a, ...others } = { a: 1, b: 2, c: 3 };
+// console.log(others);
+
+const { name, ...other } = { name: "", phone: "", email: "" };
+console.log(other);
