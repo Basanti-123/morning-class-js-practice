@@ -375,5 +375,5 @@ console.log(rest);*/
 // const { a, ...others } = { a: 1, b: 2, c: 3 };
 // console.log(others);
 
-const { name, ...other } = { name: "", phone: "", email: "" };
-console.log(other);
+// const { name, ...other } = { name: "", phone: "", email: "" };
+// console.log(other);
