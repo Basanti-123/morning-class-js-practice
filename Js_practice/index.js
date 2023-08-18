@@ -186,6 +186,28 @@ if (result !== undefined) {
 // } while (j < 12);
 
 // function
+
+/*function sayHiToMe(name) {  // more logic
+  console.log("Hii " + name);   // more logic
+
+}
+sayHiToMe("resha");
+sayHiToMe("basanti");*/
+
+/*function celciusToFarenheit(temp) {
+  if (temp > 0 && temp < 100) {
+    // temp is celcius
+    const farenheitTemp = (temp * 9) / 5 + 32;
+    console.log("The farenheit temp is ", farenheitTemp);
+  } else {
+    const celciusTemp = ((temp - 32) * 5) / 9;
+    console.log("the celcius temp is " + celciusTemp);
+  }
+}
+
+celciusToFarenheit(32);
+celciusToFarenheit(110);*/
+
 // const checkUsernameAndPassword = (username, password) => {
 //   if (username === "username" && password === "password") {
 //     alert("access granted");
@@ -207,10 +229,10 @@ if (result !== undefined) {
 //explicit function  (return)
 // callback function  (function vitra function pass)
 
-function sayHi({ salutation, fName, lastName }) {
-  console.log("hi", salutation + " " + fName + " " + lastName);
-}
-sayHi({ salutation: "Miss", fName: "Basanti", lastName: "Nagari" });
+// function sayHi({ salutation, fName, lastName }) {
+//   console.log("hi", salutation + " " + fName + " " + lastName);
+// }
+// sayHi({ salutation: "Miss", fName: "Basanti", lastName: "Nagari" });
 // task 1 function
 
 // write the explicit function that checks the username and password; and sends the following message
@@ -236,15 +258,19 @@ sayHi({ salutation: "Miss", fName: "Basanti", lastName: "Nagari" });
 // console.log({ result });
 
 // object
-const person = {
+/*const person = {
   firstName: "basanti",
   lastName: "Nagari",
   age: 24,
   dob: "1998",
   createdDate: new Date(),
   fullName: function () {
-    // method
+    // method  ES5
     return this.firstName + " " + this.lastName;
+  },
+  getAge: () => {
+    //ES6
+    return 2023 - person.dob;
   },
 };
 
@@ -252,5 +278,33 @@ const person = {
 //const name = person["firstName"];
 const fullname = person.fullName();
 console.log(fullname);
+const age = person.getAge();
+console.log({ age });
+*/
 
 // hosting (variable/function)
+
+// Array
+
+const student_name = ["basanti", "rita", "madhabi", "rita", "sabi"];
+
+console.log(student_name.length);
+student_name.push("rabi");
+console.log(student_name);
+
+student_name.pop("sabi");
+console.log(student_name);
+
+student_name.toString();
+console.log(student_name);
+
+// Destructuring Objects
+const user = { name: "", email: "", password: "123", phone: "" };
+
+// const { email, password, ...rest } = user;
+// console.log({ user: rest });
+
+// console.log(user.password);
+
+const [first, ...rest] = [1, 2, 3, 4];
+console.log(rest);
