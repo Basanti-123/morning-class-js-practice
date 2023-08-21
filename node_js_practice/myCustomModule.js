@@ -6,4 +6,8 @@ const myTime = () => {
   return new Date().getTime();
 };
 
-module.exports = { myDate, myTime };
+const getYear = () => {
+  return new Date().getFullYear();
+};
+
+module.exports = { myDate, myTime, getYear };
